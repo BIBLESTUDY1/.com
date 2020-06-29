@@ -1,0 +1,485 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quiz Questions </title>
+<style>
+p {
+  text-align: auto;
+  font-size: 20px;
+  margin-top: 0px;
+}
+</style>
+<style>
+body {
+  background-color: white;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: grey;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+<style>
+div {
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+.danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
+
+.success {
+  background-color: #ddffdd;
+  border-left: 6px solid #4CAF50;
+}
+
+.info {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196F3;
+}
+
+
+.warning {
+  background-color: #ffffcc;
+  border-left: 6px solid #ffeb3b;
+}
+</style>
+</head>
+<body style= "background:url('skyback.jpg')">
+<h1 class="glow">BIBLE QUIZ</h1>
+<center><h1><u>Quiz Questions</u></h1></center>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 01, 2020 01:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<p>
+<form name="quiz">
+<p>
+
+<div class="danger"><strong><b>Question 1.</strong></div>
+
+<br>ഞാൻ ആദൃത്തെ വനിതാ വിധികർത്താവാണ്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q1" value="യായേൽ">യായേൽ<br>
+
+<input type="radio" name="q1" value="ദെബോര">ദെബോര<br>
+
+<input type="radio" name="q1" value="അക്സ">അക്സ<br>
+
+</blockquote>
+<p id="demo"></p>
+
+
+
+<p><b>
+
+
+
+<div class="success"><strong>Question 2.</strong></div>
+
+<br>ഞാൻ ബൃൂട്ടി പെജൻ്റ് നേടി?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q2" value="ലേയ">ലേയ<br>
+
+<input type="radio" name="q2" value="ബിൽഹാ"> ബിൽഹാ<br>
+
+<input type="radio" name="q2" value="റാഹേൽ">റാഹേൽ<br>
+
+</blockquote>
+
+<p><b>
+
+
+
+<div class="info"><strong>Question 3.</strong></div>
+
+<br> ഞാൻ എൻ്റെ ഭർത്താവിനോടൊപ്പ൦ പരിശുദ്ധാത്മാവിനോട് കള്ള൦ പറഞ്ഞു?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q3" value="പ്രിസ്കില്ല">പ്രിസ്കില്ല<br>
+
+<input type="radio" name="q3" value="സഫീറ"> സഫീറ<br>
+
+<input type="radio" name="q3" value="മറിയ">മറിയ<br>
+
+</blockquote>
+
+
+<p><b>
+
+
+
+<div class="warning"><strong>Question 4.</strong></div>
+
+<br>എൻ്റെ സഹോദരന്മാർ ശേഖേമിൽ എല്ലാവരെയു൦ കൊന്നു?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q4" value="സില്പാ">സില്പാ<br>
+
+<input type="radio" name="q4" value="ബിൻഹാ">ബിൻഹാ<br>
+
+<input type="radio" name="q4" value="ദീന">ദീന<br>
+
+</blockquote>
+
+
+<p><b>
+
+
+
+<div class="danger"><strong>Question 5.</strong></div>
+
+<br>യോശുവയുടെ ശവശരീര൦ അടക്കിയത് എവിടെ?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q5" value="ശേഖേ൦">ശേഖേ൦<br>
+
+<input type="radio" name="q5" value="തിമ്നാത്ത്സേരഹ്">തിമ്നാത്ത്സേരഹ്<br>
+
+<input type="radio" name="q5" value="ഗിലയാദ്">ഗിലയാദ്<br>
+
+</blockquote>
+
+
+<p><b>
+
+
+
+<div class="success"><strong>Question 6.</strong></div>
+
+<br>ഹിസ്കിയാവ് സുഖ൦ പ്രാപിച്ചതറിഞ്ഞ് എഴുത്തു൦ സമ്മാനവു൦ കൊടുത്തയച്ചതാര്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q6" value="മെരോദക്ക് ബലദാൻ">മെരോദക്ക് ബലദാൻ<br>
+
+<input type="radio" name="q6" value="ശെബ്ന">ശെബ്ന<br>
+
+<input type="radio" name="q6" value="തിർഹാക്ക">തിർഹാക്ക<br>
+
+</blockquote>
+
+<p>
+
+<div class="info"><strong>Question 7.</strong></div>
+
+<br>എൻ്റെ ഭർത്താവ് ഒരു വിഢിയാണ് എന്നു പറഞ്ഞ സ്ത്രീ?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q7" value="മീഖൾ">മീഖൾ<br>
+
+<input type="radio" name="q7" value="അബീശഗ്">അബീശഗ്<br>
+
+<input type="radio" name="q7" value="അബീഗയിൽ">അബീഗയിൽ<br>
+
+</blockquote>
+
+
+<p>
+
+
+
+<div class="warning"><strong>Question 8.</strong></div>
+
+<br>എൻ്റെ ഭർത്താവ് ഒരു മരപ്പണിക്കാരനാണ്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q8" value="പ്രിസ്കില്ല">പ്രിസ്കില്ല<br>
+
+<input type="radio" name="q8" value="സഫീറ">സഫീറ<br>
+
+<input type="radio" name="q8" value="മറിയ">മറിയ<br>
+
+</blockquote>
+
+
+<p>
+
+
+
+<div class="danger"><strong>Question 9.</strong></div>
+
+<br> ഇൻഡൃ എന്ന പദ൦ എഴുതിയിട്ടുള്ള പുസ്തക൦?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q9" value="ഉല്പത്തി">ഉല്പത്തി<br>
+
+<input type="radio" name="q9" value="എസ്രാ">എസ്രാ<br>
+
+<input type="radio" name="q9" value="എസ്ഥേർ">എസ്ഥേർ<br>
+
+</blockquote>
+
+
+<p>
+
+
+
+<div class="success"><strong>Question 10.</strong></div>
+
+<br> ആദൃ൦ ആത്മഹതൃ ചെയ്ത ആൾ?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q10" value="അബീമേലക്ക്">അബീമേലക്ക്<br>
+
+<input type="radio" name="q10" value="ശൌൽ">ശൌൽ<br>
+
+<input type="radio" name="q10" value="അബ്ശാലോ൦">അബ്ശാലോ൦<br>
+
+</blockquote>
+
+<p>
+
+
+
+<div class="info"><strong>Question 11.</strong></div>
+
+<br>ഞാ൯ ദാവീദി൯െറ വലിയ മുത്തശ്ശി അമ്മയാണ്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q11" value="സാറാ">സാറാ<br>
+
+<input type="radio" name="q11" value="രൂത്ത്">രൂത്ത്<br>
+
+<input type="radio" name="q11" value="അബീശഗ്">അബീശഗ്<br>
+
+</blockquote>
+
+<p>
+
+
+
+<div class="warning"><strong>Question 12.</strong></div>
+
+<br> തിമോത്തി എ൯െറ ചെറുമകനാണ്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q12" value="ലോവീസ്">ലോവീസ്<br>
+
+<input type="radio" name="q12" value="യൂനീക്ക">യൂനീക്ക<br>
+
+<input type="radio" name="q12" value="പ്രിസ്ക">പ്രിസ്ക<br>
+
+</blockquote>
+
+<p>
+
+
+
+<div class="danger"><strong>Question 13.</strong></div>
+
+<br>ഞാ൯ ശക്ത൯െറ തല കഷണ്ടിയാക്കി?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q13" value="സിപ്പോറ">സിപ്പോറ<br>
+
+<input type="radio" name="q13" value="ദെബോര">ദെബോര<br>
+
+<input type="radio" name="q13" value="ദെലീല">ദെലീല<br>
+
+</blockquote>
+
+<p>
+
+
+
+<div class="success"><strong>Question 14.</strong></div>
+
+<br>ബേഥേലി൯െറ പഴയ പേര്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q14" value="ലൂസ്">ലൂസ്<br>
+
+<input type="radio" name="q14" value="ഏൽ ബേഥേൽ">ഏൽ ബേഥേൽ<br>
+
+<input type="radio" name="q14" value="അല്ലോൻ ബാഖൂത്ത്">അല്ലോൻ ബാഖൂത്ത്<br>
+
+</blockquote>
+
+<p>
+
+
+
+<div class="info"><strong>Question 15.</strong></div>
+
+<br>എനിക്ക് ദുർബലമായ കണ്ണുകളുണ്ട്?<br></b>
+
+<blockquote>
+
+<input type="radio" name="q15" value="ദീനാ">ദീനാ<br>
+
+<input type="radio" name="q15" value="ലേയ">ലേയ<br>
+
+<input type="radio" name="q15" value="റാഹേൽ">റാഹേൽ<br>
+
+</blockquote>
+
+<p><b>
+
+
+<form action="https://getform.io/f/e804d832-3f75-4aa0-954d-07263cef8811" method="POST" name="form" onsubmit="" >
+Number of score out of 15 = <input type= text size 15 name= "mark">
+
+Score in percentage = <input type=text size=15 name="percentage"><br>
+<input type="button"value="Grade Me"onClick="getScore(this.form);">
+
+<input type="reset" value="Clear"><p>
+<input type="button"value="sumbit"onClick="">
+
+</form>
+
+<p>
+
+</form>
+
+</body>
+
+<script>
+
+var numQues = 15;
+
+var numChoi = 3;
+
+var answers = new Array(15);
+
+answers[0] = "ദെബോര";
+
+answers[1] = "റാഹേൽ";
+
+answers[2] = " സഫീറ";
+
+answers[3] = "ദീന";
+
+answers[4] = "തിമ്നാത്ത്സേരഹ്";
+
+answers[5] = "മെരോദക്ക് ബലദാൻ";
+
+answers[6] = "അബീഗയിൽ";
+
+answers[7] = "മറിയ";
+
+answers[8] = "എസ്ഥേർ";
+
+answers[9] = "ശൌൽ";
+
+answers[10] = "രൂത്ത്";
+
+answers[11] = "ലോവീസ്";
+
+answers[12] = "ദെലീല";
+
+answers[13] = "ലൂസ്";
+
+answers[14] = "ലേയ";
+
+function getScore(form) {
+
+var score = 0;
+
+var currElt;
+
+var currSelection;
+
+for (i=0; i<numQues; i++) {
+
+currElt = i*numChoi;
+
+answered=false;
+
+for (j=0; j<numChoi; j++) {
+
+currSelection = form.elements[currElt + j];
+
+if (currSelection.checked) {
+
+answered=true;
+
+if (currSelection.value == answers[i]) {
+
+score++;
+
+break;
+
+}
+
+}
+
+}
+
+if (answered ===false){alert("Do answer all the questions, Please") ;return false;}
+
+}
+
+var scoreper = Math.round(score/numQues*100);
+
+form.percentage.value = scoreper + "%";
+
+form.mark.value=score;
+
+}
+
+</script>
+
+</html>
+
+10.5k views · View 26 Upvoters · View Sharers
