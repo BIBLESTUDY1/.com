@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-signin-client_id" content="571041110906-hmrvub4dblpiqb6u23a5p1re8a00gbe9.apps.googleusercontent.com">
     <title>Register</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
 </head>
 <body style= "background:url('skyback.jpg')">
 
@@ -58,7 +61,7 @@
             <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in" 
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
         </div>
-        Not Available
+        Google
     </a>
 </div>
 
@@ -97,5 +100,6 @@
        $("#txtConfirmPassword").keyup(checkPasswordMatch);
     });
     </script>
+	 <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>
