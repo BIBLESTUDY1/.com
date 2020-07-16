@@ -20,6 +20,29 @@
 	<style>
 #more {display: none;}
 </style>
+	  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.notification {
+  
+}
+
+.notification:hover {
+  background: red;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+</style>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -128,7 +151,9 @@ alert(msg);
           <li class="nav-item">
             <a class="nav-link" href="about.html" style="color:blue">About</a>
           </li>
-		  
+	<li class="nav-item">
+            <a class="nav-link" href="mission.html" style="color:blue">Mission</a>
+          </li>	  
           <li class="nav-item">
             <a class="nav-link" href="contact.html" style="color:blue">Contact</a>
           </li>
@@ -180,7 +205,7 @@ alert(msg);
           <input class="w3-input w3-border" type="text" placeholder=" 1കൊരിന്ത്യർ 7" value=" 1കൊരിന്ത്യർ 7" checked>
           </div>
         </div>
-<button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-book w3-margin-right"></i><a href="reading.html">Online Reading</button></a>
+<button class="w3-button w3-dark-grey" type="submit" style="color:white;"><i class="fa fa-book w3-margin-right"></i><a href="reading.html">Online Reading</button></a>
       </form>
     </div>
   </div>
@@ -255,6 +280,9 @@ alert(msg);
                </div>
              </div>
            </a>
+	 <a href="#" class="notification">
+	   <span class="badge">new</span>
+                </a>
          </div>
          <div class="col-md-6 features15-col-text">
            <a href="videosermons.html" class="d-flex flex-wrap feature-unit align-items-center">
@@ -270,6 +298,9 @@ alert(msg);
                </div>
              </div>
            </a>
+		 <a href="#" class="notification">
+		  <span class="badge">new</span>
+                </a>
          </div>
          <div class="col-md-6 features15-col-text">
            <a href="#url" class="d-flex flex-wrap feature-unit align-items-center">
