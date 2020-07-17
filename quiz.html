@@ -68,7 +68,7 @@ div {
 <center><h1><u>Quiz Questions</u></h1></center>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("July 01, 2020 01:00").getTime();
+var countDownDate = new Date("July 21, 2020 01:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -378,12 +378,15 @@ var x = setInterval(function() {
 
 <form action="https://getform.io/f/34d6d88c-dba2-41fc-a34a-9f71aac1cbba" method="POST" name="quiz" onsubmit="" >
 Name:<input type="text" placeholder="Enter your full name" name="name">
+  <br>
 
 Email:<input type="email"  placeholder="Enter your email id" name="email">
+  <br>
 Number of score out of 15 = <input type= text size 15 name= "mark">
 <br>
 
-Score in percentage = <input type=text size=15 name="percentage"><br>
+Score in percentage = <input type=text size=15 name="percentage">
+  <br>
 
 <input type="button"value="Grade Me"onClick="getScore(this.form);">
 
