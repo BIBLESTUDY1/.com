@@ -76,8 +76,8 @@
                     <div class="textfield-search one-third"><input type="text" class="form-control" placeholder="Keyword search..."></div>
                     <div class="select-wrap one-third">
                       <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                      <select name="" id="" class="form-control">
-                        <option value="">Old Testament</option>
+                      <select name="" id="" class="form-control" onchange="location = this.value;">
+                        <option value="Old Testament">Old Testament</option>
                         <option value="reading.html">സങ്കീർത്തനങ്ങൾ 32-34</option>
                         <option value="">സങ്കീർത്തനങ്ങൾ 35-37</option>
                       </select>
@@ -85,13 +85,13 @@
                     <div class="select-wrap one-third">
                       <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                       <select name="" id="" class="form-control">
-                        <option value="">New Testament</option>
+                        <option value="New Testament">New Testament</option>
                         <option value="reading.html">2കൊരിന്ത്യർ 1-2:4</option>
                         <option value="">1കൊരിന്ത്യർ 16</option>
                       </select>
                     </div>
                   </div>
-                  <button onclick="document.location='reading.html'" type="submit" class="search-submit btn btn-primary" value="Read" >Read</button>
+                  <a href="reading.html"><button onclick="document.location='reading.html'" type="submit" class="search-submit btn btn-primary" value="Read" >Read</button></a>
                 </form>
                 
                 <p class="text-center"><a href="register.html" class="btn py-3 px-5">Register Now</a></p>
