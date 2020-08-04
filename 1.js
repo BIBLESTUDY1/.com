@@ -16,7 +16,7 @@ var firebaseConfig = {
 function signOut(){
 	
 	auth.signOut();
-	alert("signed out");
+	alert("Logged out");
 }
 
 
