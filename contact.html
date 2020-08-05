@@ -76,7 +76,7 @@
               <span class="fa fa-envelope-o"></span>
             </div>
             <div class="cont-right">
-              <p><a href="mailto:mailid@mail.com" class="mail">tjohn8@yahoo.com</a></p>
+              <p><a href="" class="mail">tjohn8@yahoo.com</a></p>
             </div>
           </div>
           <div class="cont-top mt-4">
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="map-content-9 col-md-7 mt-5 mt-md-0">
-          <form id="submit-form"  action=""  name="contact">
+          <form id="gform"  action=""  name="contact">
             <div class="form-group row">
               <div class="col-md-6">
                 <label class="contact-textfield-label" >First Name</label>
@@ -148,11 +148,11 @@
 	      
 	      
 	      <script>
-        $("#submit-form").submit((e)=>{
+        $("#gform").submit((e)=>{
             e.preventDefault()
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbypbZU-gMEPtUkTnNvyyC13BnNjAcyrBEgCYRtKKw/exec",
-                data:$("#submit-form").serialize(),
+                data:$("#gform").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully")
