@@ -13,8 +13,9 @@
     <link href="//fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
     <!-- //web fonts -->
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+	  
   </head>
   <body>
 <div class="w3l-bootstrap-header fixed-top">
@@ -144,6 +145,28 @@
         <button onclick="topFunction()" id="movetop" title="Go to top">
           &#10548;
         </button>
+	      
+	      
+	      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbypbZU-gMEPtUkTnNvyyC13BnNjAcyrBEgCYRtKKw/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="contact"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+	      
         <script>
           // When the user scrolls down 20px from the top of the document, show the button
           window.onscroll = function () {
@@ -176,25 +199,7 @@
       
       <script src="assets/js/owl.carousel.js"></script>
 	  
-	  <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbypbZU-gMEPtUkTnNvyyC13BnNjAcyrBEgCYRtKKw/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="contact"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script>
+	  
 
       <!-- script for owlcarousel -->
       <script>
