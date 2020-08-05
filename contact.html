@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="map-content-9 col-md-7 mt-5 mt-md-0">
-          <form id="gform"  action=""  name="contact">
+          <form id="gform" method:"POST"  action="https://script.google.com/macros/s/AKfycbypbZU-gMEPtUkTnNvyyC13BnNjAcyrBEgCYRtKKw/exec"  name="contact">
             <div class="form-group row">
               <div class="col-md-6">
                 <label class="contact-textfield-label" >First Name</label>
@@ -145,26 +145,7 @@
           &#10548;
         </button>
 	      
-	      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	      <script>
-        $("#gform").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbypbZU-gMEPtUkTnNvyyC13BnNjAcyrBEgCYRtKKw/exec",
-                data:$("#gform").serialize(),
-                method:"POST",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="contact"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script>
+	
 	      
         <script>
           // When the user scrolls down 20px from the top of the document, show the button
@@ -191,8 +172,7 @@
       <!-- //footer-28 block -->
 
       <!-- jQuery, Bootstrap JS -->
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="assets/js/jquery-3.3.1.min.js"></script>
+	 
       <script src="assets/js/bootstrap.min.js"></script>
 
       <!-- Template JavaScript -->
