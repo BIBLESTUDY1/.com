@@ -3,13 +3,45 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Quiz Questions </title>
-  <link rel="icon" href="newone.jpg" type="image" sizes="16x16">
 <style>
 p {
   text-align: auto;
   font-size: 20px;
   margin-top: 0px;
 }
+
+
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4.0em;
+  color:grey;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
+}
+
+
+.ml12 {
+  font-weight: 500;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color:#c23616;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
 </style>
 <style>
 body {
@@ -64,12 +96,17 @@ div {
 }
 </style>
 </head>
-<body style= "background:url('skyback.jpg')">
-<h1 class="glow">BIBLE QUIZ</h1>
-<center><h1><u>Quiz Questions</u></h1></center>
+<body style= "background:url('white.jpg')">
+
+<center><h1 class="ml12">BIBLE Quiz</h1></center>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<center><h1 style="color:grey;"><u>Quiz Questions</u></h1></center>
+
+
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("July 21, 2020 01:00").getTime();
+var countDownDate = new Date("July 01, 2020 01:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -100,6 +137,8 @@ var x = setInterval(function() {
 <p>
 <form action="https://getform.io/f/34d6d88c-dba2-41fc-a34a-9f71aac1cbba" method="POST" name="quiz" >
 <p>
+<br>
+<br>
 
 <div class="danger"><strong><b>Question 1.</strong></div>
 
@@ -379,19 +418,16 @@ var x = setInterval(function() {
 
 <form action="https://getform.io/f/34d6d88c-dba2-41fc-a34a-9f71aac1cbba" method="POST" name="quiz" onsubmit="" >
 Name:<input type="text" placeholder="Enter your full name" name="name">
-  <br>
 
-Email:<input type="email"  placeholder="eg: @example.com" name="email">
-  <br>
+Email:<input type="email"  placeholder="Enter your email id" name="email">
 Number of score out of 15 = <input type= text size 15 name= "mark">
 <br>
 
-Score in percentage = <input type=text size=15 name="percentage">
-  <br>
+Score in percentage = <input type=text size=15 name="percentage"><br>
 
 <input type="button"value="Grade Me"onClick="getScore(this.form);">
 
-<input type="submit" value="Send Form" style="background-color:black; color:white;" onclick="alert('Submitted successfully!')">
+<input type="submit" value="Send Form" style="background-color:black; color:white;">
 
 </form>
 
@@ -486,8 +522,83 @@ form.mark.value=score;
 }
 
 </script>
+<script>
+var ml4 = {};
+ml4.opacityIn = [0,1];
+ml4.scaleIn = [0.2, 1];
+ml4.scaleOut = 3;
+ml4.durationIn = 800;
+ml4.durationOut = 600;
+ml4.delay = 500;
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml4 .letters-1',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-1',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-2',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: ml4.opacityIn,
+    scale: ml4.scaleIn,
+    duration: ml4.durationIn
+  }).add({
+    targets: '.ml4 .letters-3',
+    opacity: 0,
+    scale: ml4.scaleOut,
+    duration: ml4.durationOut,
+    easing: "easeInExpo",
+    delay: ml4.delay
+  }).add({
+    targets: '.ml4',
+    opacity: 0,
+    duration: 500,
+    delay: 500
+  });
+</script>
+<script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+
+</script>
 </html>
 
 10.5k views · View 26 Upvoters · View Sharers
-
